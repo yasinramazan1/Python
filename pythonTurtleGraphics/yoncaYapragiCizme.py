@@ -1,0 +1,21 @@
+import turtle
+
+t = turtle.Turtle()
+turtle.title("Yonca Yaprağı Çizimi")
+t.speed(0)
+t.color("#00FF00")
+turtle.bgcolor("purple")
+t.width(2)
+for i in range(10, 130, 6):
+    t.penup()
+    t.goto(0,0)
+    t.pendown() # t.pd()
+    t.right(90)
+    t.circle(i)
+t.penup()
+t.goto(0, 240)
+t.pd() # t.pendown()
+t.color("red")
+t.write("Yasin Ramazan'ın Python Çalışması", False, "center", ("Calibri", 14, "bold"))
+t.hideturtle()
+turtle.done()
